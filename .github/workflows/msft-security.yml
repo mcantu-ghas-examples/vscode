@@ -11,6 +11,8 @@ jobs:
   MSFT-Scan:
     name: Microsoft Security DevOps Analysis
     runs-on: windows-latest
+    
+    steps:
     # Checkout your code repository to scan
     - uses: actions/checkout@v3
     - uses: actions/setup-dotnet@v3
