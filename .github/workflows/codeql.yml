@@ -19,6 +19,11 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+concurrency: 
+  group: sec-scan
+  cancel-in-progress: true 
+
+
 jobs:
   analyze:
     name: Analyze
